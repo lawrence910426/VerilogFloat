@@ -4,6 +4,8 @@ Nov 18 2020
 09:47:47
 C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
 C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/ENCODER_T.v,1640011860,verilog,,,,ENCODER_T,,,,,,,,
-C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v,1639980722,verilog,,C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/ENCODER_T.v,,ENCODER_16;ENCODER_2;ENCODER_32;ENCODER_4;ENCODER_64;ENCODER_8,,,,,,,,
+C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT_TO_INT_T.v,1640012617,verilog,,,,FLOAT_TO_INT_T,,,,,,,,
+C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v,1639980722,verilog,,C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v,,ENCODER_16;ENCODER_2;ENCODER_32;ENCODER_4;ENCODER_64;ENCODER_8,,,,,,,,
 C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v,1640002414,verilog,,,,FLOAT32_MUL,,,,,,,,
-C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v,1640004484,verilog,,C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT_T.v,,INT_TO_FLOAT,,,,,,,,
+C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v,1640014882,verilog,,C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v,,FLOAT_TO_INT,,,,,,,,
+C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v,1640004484,verilog,,C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT_TO_INT_T.v,,INT_TO_FLOAT,,,,,,,,

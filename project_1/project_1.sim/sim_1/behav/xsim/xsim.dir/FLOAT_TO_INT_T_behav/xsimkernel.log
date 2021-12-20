@@ -1,0 +1,4 @@
+Running: xsim.dir/FLOAT_TO_INT_T_behav/xsimk.exe -simmode gui -wdb FLOAT_TO_INT_T_behav.wdb -simrunnum 0 -socket 56314
+Design successfully loaded
+Design Loading Memory Usage: 5816 KB (Peak: 5816 KB)
+Design Loading CPU Usage: 0 ms

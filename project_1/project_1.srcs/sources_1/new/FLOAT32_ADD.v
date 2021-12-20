@@ -1,7 +1,3 @@
-/*
-    Compute a + b and output out.
-*/
-
 module FLOAT32_ADD (a, b, out);
     input [32 - 1:0] a, b;
     output [32 - 1:0] out;
