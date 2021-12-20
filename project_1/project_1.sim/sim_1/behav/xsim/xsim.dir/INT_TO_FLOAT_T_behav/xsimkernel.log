@@ -2,3 +2,6 @@ Running: xsim.dir/INT_TO_FLOAT_T_behav/xsimk.exe -simmode gui -wdb INT_TO_FLOAT_
 Design successfully loaded
 Design Loading Memory Usage: 5812 KB (Peak: 5812 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6484 KB (Peak: 6484 KB)
+Simulation CPU Usage: 15 ms
