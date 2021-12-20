@@ -2,3 +2,6 @@ Running: xsim.dir/FLOAT32_MUL_T_behav/xsimk.exe -simmode gui -wdb FLOAT32_MUL_T_
 Design successfully loaded
 Design Loading Memory Usage: 5896 KB (Peak: 5896 KB)
 Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 6596 KB (Peak: 6596 KB)
+Simulation CPU Usage: 77 ms
