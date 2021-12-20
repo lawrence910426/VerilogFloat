@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b14f7e29f3bc444c97c6ad30937a4498 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FLOAT_TO_INT_T_behav xil_defaultlib.FLOAT_TO_INT_T xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b14f7e29f3bc444c97c6ad30937a4498 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FLOAT32_ADD_T_behav xil_defaultlib.FLOAT32_ADD_T xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -16,7 +16,8 @@ Compiling module xil_defaultlib.ENCODER_8
 Compiling module xil_defaultlib.ENCODER_16
 Compiling module xil_defaultlib.ENCODER_32
 Compiling module xil_defaultlib.INT_TO_FLOAT
+Compiling module xil_defaultlib.FLOAT32_ADD
 Compiling module xil_defaultlib.FLOAT_TO_INT
-Compiling module xil_defaultlib.FLOAT_TO_INT_T
+Compiling module xil_defaultlib.FLOAT32_ADD_T
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot FLOAT_TO_INT_T_behav
+Built simulation snapshot FLOAT32_ADD_T_behav

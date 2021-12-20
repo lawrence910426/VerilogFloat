@@ -2,11 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Dec 20 22:04:10 2021
-# Process ID: 11596
+# Start of session at: Mon Dec 20 23:55:49 2021
+# Process ID: 5192
 # Current directory: C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/INT_TO_FLOAT_T_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/FLOAT32_ADD_T_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/INT_TO_FLOAT_T_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/home/github/VerilogFloat/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/FLOAT32_ADD_T_behav/webtalk/xsim_webtalk.tcl -notrace
