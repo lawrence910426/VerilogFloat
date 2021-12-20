@@ -33,7 +33,7 @@ module FLOAT32_ADD_T();
         b = 32'd25;
         #4;
 
-        // Test passed with round error
+        // Test passed perfectly
         a = 32'd0;
         b = 32'd25;
         #4;

@@ -28,5 +28,9 @@ module INT_TO_FLOAT(
             Value << (5'd23 - Highest)
         );
     
-    assign out = { Sign, Exponent, Mantissa };
+    assign out = (
+        in == 32'd0 ? 
+        32'b0000_0000_0000_0000_0000_0000_0000_0000 :
+        { Sign, Exponent, Mantissa }
+    );
 endmodule

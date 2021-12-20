@@ -11,14 +11,14 @@ module FLOAT32_MUL(a, b, out);
     wire [23 - 1:0] Output_mantissa;
     wire [8 - 1:0] Output_exponent;
     
-    assign
-        Computed_mantissa = {1'b1, a[23 - 1:0]} * {1'b1, b[23 - 1:0]},
-        Computed_exponent = a[30:23] + b[30:23] + (Highest_bit - 6'd23);
+    assign Computed_mantissa = {1'b1, a[23 - 1:0]} * {1'b1, b[23 - 1:0]};
         
     ENCODER_64 encoder (
-        .in(Computed_mantissa),
+        .in({16'b0, Computed_mantissa}),
         .out(Highest_bit)
     );
+
+    assign Computed_exponent = a[30:23] + b[30:23] + (Highest_bit - 6'd23 - 6'd23);
     
     assign
         Output_sign = a[32 - 1] ^ b[32 - 1],
@@ -28,6 +28,7 @@ module FLOAT32_MUL(a, b, out);
             Computed_exponent >= 9'b1_1000_0000 ? 9'b0_1111_1111 :
             Computed_exponent - 9'b0_1000_0000
         );
-        
+
+    // assign out = { 1'b1, Highest_bit, 1'b1 };
     assign out = { Output_sign, Output_exponent, Output_mantissa };
 endmodule

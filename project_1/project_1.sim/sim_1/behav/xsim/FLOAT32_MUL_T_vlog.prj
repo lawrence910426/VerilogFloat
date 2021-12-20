@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/ENCODER.v" \
+"../../../../project_1.srcs/sources_1/new/FLOAT32_MUL.v" \
+"../../../../project_1.srcs/sources_1/new/FLOAT_TO_INT.v" \
+"../../../../project_1.srcs/sources_1/new/INT_TO_FLOAT.v" \
+"../../../../project_1.srcs/sim_1/new/FLOAT32_MUL_T.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

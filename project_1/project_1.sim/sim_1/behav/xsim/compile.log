@@ -5,11 +5,11 @@ INFO: [VRFC 10-311] analyzing module ENCODER_16
 INFO: [VRFC 10-311] analyzing module ENCODER_8
 INFO: [VRFC 10-311] analyzing module ENCODER_4
 INFO: [VRFC 10-311] analyzing module ENCODER_2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FLOAT32_ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FLOAT32_MUL
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FLOAT_TO_INT
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module INT_TO_FLOAT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT32_ADD_T.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FLOAT32_ADD_T
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT32_MUL_T.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FLOAT32_MUL_T
