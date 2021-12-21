@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Dec 20 20:14:37 2021
-# Process ID: 3004
+# Start of session at: Tue Dec 21 09:47:56 2021
+# Process ID: 9816
 # Current directory: C:/home/github/VerilogFloat/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log FLOAT32_ADD.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FLOAT32_ADD.tcl
 # Log file: C:/home/github/VerilogFloat/project_1/project_1.runs/synth_1/FLOAT32_ADD.vds
