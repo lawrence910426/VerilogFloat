@@ -21,7 +21,7 @@ module FLOAT32_MUL(a, b, out, clk);
         Computed_mantissa = {1'b1, a[23 - 1:0]} * {1'b1, b[23 - 1:0]};
         
     ENCODER_64 encoder (
-        .in({16'b0, Computed_mantissa}),
+        .in({16'b0, Computed_mantissa}),    
         .out(Highest_bit_wire)
     );
 
