@@ -1,17 +1,22 @@
-module FLOAT32_ADD (a, b, out);
+// Takes 3 clocks to complete
+// Critical time is around 7.1 ns on desired fpga
+
+module FLOAT32_ADD (a, b, out, clk);
     input [32 - 1:0] a, b;
+    input clk;
     output [32 - 1:0] out;
     
     // A is the one with greater absolute value
     // B is the one with smaller absolute value
-    wire [32 - 1:0] A, B;
+    reg [32 - 1:0] A, B;
     
     wire A_sign, B_sign;
     wire [8 - 1:0] A_exp, B_exp, Diff_exp;
     wire [24 - 1:0] A_mantissa, B_mantissa, Shifted_B_mantissa;
 
-    wire [26 - 1:0] Computed_mantissa;
-    wire [5 - 1:0] Highest_bit;
+    reg [26 - 1:0] Computed_mantissa;
+    wire [5 - 1:0] Highest_bit_wire;
+    reg [5 - 1:0] Highest_bit;
     wire [9 - 1:0] Computed_exponent;
 
     wire Dummy_bit_exponent;
@@ -21,10 +26,15 @@ module FLOAT32_ADD (a, b, out);
     wire [8 - 1:0] Output_exponent;
     wire [23 - 1:0] Output_mantissa;
     
+    always @ (posedge clk)
+        {
+            A, B
+        } <= {
+            (a[30:0] > b[30:0] ? a : b),
+            (a[30:0] < b[30:0] ? a : b)
+        };
+    
     assign 
-        A = (a[30:0] > b[30:0] ? a : b),
-        B = (a[30:0] < b[30:0] ? a : b),
-        
         A_sign = A[31],
         B_sign = B[31],
         
@@ -34,19 +44,27 @@ module FLOAT32_ADD (a, b, out);
         
         A_mantissa = {1'b1, A[23 - 1:0]},
         B_mantissa = {1'b1, B[23 - 1:0]},
-        
-        Shifted_B_mantissa = B_mantissa >> Diff_exp,
-        
-        Computed_mantissa = (
+        Shifted_B_mantissa = B_mantissa >> Diff_exp;
+    
+    // A_sign propagate
+    // A_exp propagate
+    always @ (posedge clk)
+        Computed_mantissa <= (
             A_sign == B_sign ?
             {2'b00, A_mantissa} + {2'b00, Shifted_B_mantissa} :
             A_mantissa - Shifted_B_mantissa
-        );
+        );   
     
     ENCODER_32 encoder (
         .in({6'b00_0000, Computed_mantissa}),
-        .out(Highest_bit)
+        .out(Highest_bit_wire)
     );
+    
+    // A_sign propagate
+    // Computed_mantissa propagate
+    // A_exp propagate
+    always @ (posedge clk)
+        Highest_bit <= Highest_bit_wire;
     
     assign
         Computed_exponent = {1'b0, A_exp} + {4'b0000, Highest_bit},
