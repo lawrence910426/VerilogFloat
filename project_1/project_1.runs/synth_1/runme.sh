@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FLOAT32_ADD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FLOAT32_ADD.tcl
+EAStep vivado -log FLOAT32_ADD_PIPELINE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FLOAT32_ADD_PIPELINE.tcl

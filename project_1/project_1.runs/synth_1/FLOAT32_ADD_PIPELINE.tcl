@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/home/github/VerilogFloat/project_1/project_1.runs/synth_1/FLOAT32_ADD.tcl"
+  variable script "C:/home/github/VerilogFloat/project_1/project_1.runs/synth_1/FLOAT32_ADD_PIPELINE.tcl"
   variable category "vivado_synth"
 }
 
@@ -87,6 +87,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
   C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
+  C:/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,7 +102,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top FLOAT32_ADD -part xc7a35tcpg236-1
+synth_design -top FLOAT32_ADD_PIPELINE -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -111,10 +112,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef FLOAT32_ADD.dcp
+write_checkpoint -force -noxdef FLOAT32_ADD_PIPELINE.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file FLOAT32_ADD_utilization_synth.rpt -pb FLOAT32_ADD_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file FLOAT32_ADD_PIPELINE_utilization_synth.rpt -pb FLOAT32_ADD_PIPELINE_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
