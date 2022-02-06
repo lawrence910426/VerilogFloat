@@ -1,3 +1,3 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-$finish called at time : 16 ns : File "C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT32_MUL_T.v" Line 45
+$finish called at time : 20 ns : File "C:/home/github/VerilogFloat/project_1/project_1.srcs/sim_1/new/FLOAT32_MUL_T.v" Line 55

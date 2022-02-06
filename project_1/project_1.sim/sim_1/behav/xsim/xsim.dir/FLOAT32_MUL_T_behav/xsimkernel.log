@@ -1,7 +1,7 @@
-Running: xsim.dir/FLOAT32_MUL_T_behav/xsimk.exe -simmode gui -wdb FLOAT32_MUL_T_behav.wdb -simrunnum 0 -socket 54509
+Running: xsim.dir/FLOAT32_MUL_T_behav/xsimk.exe -simmode gui -wdb FLOAT32_MUL_T_behav.wdb -simrunnum 0 -socket 60127
 Design successfully loaded
-Design Loading Memory Usage: 5896 KB (Peak: 5896 KB)
-Design Loading CPU Usage: 62 ms
+Design Loading Memory Usage: 5916 KB (Peak: 5916 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 6596 KB (Peak: 6596 KB)
-Simulation CPU Usage: 77 ms
+Simulation Memory Usage: 6632 KB (Peak: 6632 KB)
+Simulation CPU Usage: 15 ms

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 16:33:00 2022
+# Process ID: 17936
+# Current directory: C:/home/github/VerilogFloat/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1172 C:\home\github\VerilogFloat\project_1\project_1.xpr
+# Log file: C:/home/github/VerilogFloat/project_1/vivado.log
+# Journal file: C:/home/github/VerilogFloat/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/VerilogFloat/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+
+launch_simulation
+launch_simulation
+launch_simulation
+source FLOAT32_MUL_T.tcl
+close_sim
+launch_simulation
+source FLOAT32_MUL_T.tcl
+close_sim
+launch_simulation
+source FLOAT32_MUL_T.tcl
+close_sim
+launch_simulation
+source FLOAT32_MUL_T.tcl
+close_sim

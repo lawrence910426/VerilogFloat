@@ -54,48 +54,50 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-IKI_DLLESPEC extern void execute_131(char*, char *);
-IKI_DLLESPEC extern void execute_137(char*, char *);
-IKI_DLLESPEC extern void execute_283(char*, char *);
-IKI_DLLESPEC extern void execute_284(char*, char *);
-IKI_DLLESPEC extern void execute_138(char*, char *);
-IKI_DLLESPEC extern void execute_170(char*, char *);
-IKI_DLLESPEC extern void execute_171(char*, char *);
-IKI_DLLESPEC extern void execute_172(char*, char *);
-IKI_DLLESPEC extern void execute_173(char*, char *);
-IKI_DLLESPEC extern void execute_169(char*, char *);
-IKI_DLLESPEC extern void execute_153(char*, char *);
-IKI_DLLESPEC extern void execute_145(char*, char *);
-IKI_DLLESPEC extern void execute_141(char*, char *);
-IKI_DLLESPEC extern void execute_139(char*, char *);
-IKI_DLLESPEC extern void execute_210(char*, char *);
+IKI_DLLESPEC extern void execute_195(char*, char *);
+IKI_DLLESPEC extern void execute_201(char*, char *);
+IKI_DLLESPEC extern void execute_417(char*, char *);
+IKI_DLLESPEC extern void execute_418(char*, char *);
+IKI_DLLESPEC extern void execute_419(char*, char *);
+IKI_DLLESPEC extern void execute_420(char*, char *);
+IKI_DLLESPEC extern void execute_202(char*, char *);
+IKI_DLLESPEC extern void execute_234(char*, char *);
+IKI_DLLESPEC extern void execute_235(char*, char *);
+IKI_DLLESPEC extern void execute_236(char*, char *);
+IKI_DLLESPEC extern void execute_237(char*, char *);
+IKI_DLLESPEC extern void execute_233(char*, char *);
+IKI_DLLESPEC extern void execute_217(char*, char *);
+IKI_DLLESPEC extern void execute_209(char*, char *);
+IKI_DLLESPEC extern void execute_205(char*, char *);
+IKI_DLLESPEC extern void execute_203(char*, char *);
 IKI_DLLESPEC extern void execute_274(char*, char *);
-IKI_DLLESPEC extern void execute_275(char*, char *);
-IKI_DLLESPEC extern void execute_276(char*, char *);
-IKI_DLLESPEC extern void execute_277(char*, char *);
-IKI_DLLESPEC extern void execute_278(char*, char *);
-IKI_DLLESPEC extern void execute_279(char*, char *);
-IKI_DLLESPEC extern void execute_273(char*, char *);
-IKI_DLLESPEC extern void execute_280(char*, char *);
-IKI_DLLESPEC extern void execute_281(char*, char *);
-IKI_DLLESPEC extern void execute_282(char*, char *);
-IKI_DLLESPEC extern void execute_133(char*, char *);
-IKI_DLLESPEC extern void execute_134(char*, char *);
-IKI_DLLESPEC extern void execute_135(char*, char *);
-IKI_DLLESPEC extern void execute_136(char*, char *);
-IKI_DLLESPEC extern void execute_285(char*, char *);
-IKI_DLLESPEC extern void execute_286(char*, char *);
-IKI_DLLESPEC extern void execute_287(char*, char *);
-IKI_DLLESPEC extern void execute_288(char*, char *);
-IKI_DLLESPEC extern void execute_289(char*, char *);
-IKI_DLLESPEC extern void execute_290(char*, char *);
+IKI_DLLESPEC extern void execute_338(char*, char *);
+IKI_DLLESPEC extern void execute_339(char*, char *);
+IKI_DLLESPEC extern void execute_340(char*, char *);
+IKI_DLLESPEC extern void execute_341(char*, char *);
+IKI_DLLESPEC extern void execute_342(char*, char *);
+IKI_DLLESPEC extern void execute_343(char*, char *);
+IKI_DLLESPEC extern void execute_337(char*, char *);
+IKI_DLLESPEC extern void execute_344(char*, char *);
+IKI_DLLESPEC extern void execute_345(char*, char *);
+IKI_DLLESPEC extern void execute_346(char*, char *);
+IKI_DLLESPEC extern void execute_197(char*, char *);
+IKI_DLLESPEC extern void execute_198(char*, char *);
+IKI_DLLESPEC extern void execute_199(char*, char *);
+IKI_DLLESPEC extern void execute_200(char*, char *);
+IKI_DLLESPEC extern void execute_421(char*, char *);
+IKI_DLLESPEC extern void execute_422(char*, char *);
+IKI_DLLESPEC extern void execute_423(char*, char *);
+IKI_DLLESPEC extern void execute_424(char*, char *);
+IKI_DLLESPEC extern void execute_425(char*, char *);
+IKI_DLLESPEC extern void execute_426(char*, char *);
 IKI_DLLESPEC extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[36] = {(funcp)execute_131, (funcp)execute_137, (funcp)execute_283, (funcp)execute_284, (funcp)execute_138, (funcp)execute_170, (funcp)execute_171, (funcp)execute_172, (funcp)execute_173, (funcp)execute_169, (funcp)execute_153, (funcp)execute_145, (funcp)execute_141, (funcp)execute_139, (funcp)execute_210, (funcp)execute_274, (funcp)execute_275, (funcp)execute_276, (funcp)execute_277, (funcp)execute_278, (funcp)execute_279, (funcp)execute_273, (funcp)execute_280, (funcp)execute_281, (funcp)execute_282, (funcp)execute_133, (funcp)execute_134, (funcp)execute_135, (funcp)execute_136, (funcp)execute_285, (funcp)execute_286, (funcp)execute_287, (funcp)execute_288, (funcp)execute_289, (funcp)execute_290, (funcp)vlog_transfunc_eventcallback};
-const int NumRelocateId= 36;
+funcp funcTab[38] = {(funcp)execute_195, (funcp)execute_201, (funcp)execute_417, (funcp)execute_418, (funcp)execute_419, (funcp)execute_420, (funcp)execute_202, (funcp)execute_234, (funcp)execute_235, (funcp)execute_236, (funcp)execute_237, (funcp)execute_233, (funcp)execute_217, (funcp)execute_209, (funcp)execute_205, (funcp)execute_203, (funcp)execute_274, (funcp)execute_338, (funcp)execute_339, (funcp)execute_340, (funcp)execute_341, (funcp)execute_342, (funcp)execute_343, (funcp)execute_337, (funcp)execute_344, (funcp)execute_345, (funcp)execute_346, (funcp)execute_197, (funcp)execute_198, (funcp)execute_199, (funcp)execute_200, (funcp)execute_421, (funcp)execute_422, (funcp)execute_423, (funcp)execute_424, (funcp)execute_425, (funcp)execute_426, (funcp)vlog_transfunc_eventcallback};
+const int NumRelocateId= 38;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/FLOAT32_MUL_T_behav/xsim.reloc",  (void **)funcTab, 36);
+	iki_relocate(dp, "xsim.dir/FLOAT32_MUL_T_behav/xsim.reloc",  (void **)funcTab, 38);
 
 	/*Populate the transaction function pointer field in the whole net structure */
 }
@@ -105,10 +107,19 @@ void sensitize(char *dp)
 	iki_sensitize(dp, "xsim.dir/FLOAT32_MUL_T_behav/xsim.reloc");
 }
 
+	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+
+void wrapper_func_0(char *dp)
+
+{
+
+}
+
 void simulate(char *dp)
 {
 		iki_schedule_processes_at_time_zero(dp, "xsim.dir/FLOAT32_MUL_T_behav/xsim.reloc");
-	// Initialize Verilog nets in mixed simulation, for the cases when the value at time 0 should be propagated from the mixed language Vhdl net
+	wrapper_func_0(dp);
+
 	iki_execute_processes();
 
 	// Schedule resolution functions for the multiply driven Verilog nets that have strength
